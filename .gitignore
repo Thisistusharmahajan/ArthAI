@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+.env
+*.egg-info/
+
+# Data & ML (don't commit training data or indexes)
+backend/data/uploads/
+backend/data/faiss_index/
+backend/data/exports/
+*.faiss
+*.pkl
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body { font-family: 'Sora', sans-serif; }
+
+/* Markdown styles inside chat bubbles */
+.prose p { margin-bottom: 8px; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { font-weight: 600; }
+.prose ul, .prose ol { padding-left: 18px; margin-bottom: 8px; }
+.prose li { margin-bottom: 4px; }
+.prose h1, .prose h2, .prose h3 { font-weight: 600; margin: 10px 0 6px; }
+.prose code { font-family: monospace; background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.prose table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 8px 0; }
+.prose th { background: rgba(0,0,0,0.06); padding: 5px 8px; text-align: left; font-weight: 500; }
+.prose td { padding: 5px 8px; border-top: 0.5px solid rgba(0,0,0,0.08); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border-secondary); border-radius: 99px; }
+
+/* Focus */
+textarea:focus, input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+  border-color: #FF6B00 !important;
+}
+
+button { transition: all 0.12s; }
+button:active { transform: scale(0.97); }

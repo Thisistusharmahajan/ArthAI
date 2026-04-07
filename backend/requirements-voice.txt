@@ -1,0 +1,13 @@
+# Install these AFTER requirements.txt, only if you need voice input (Whisper)
+# Run: pip install -r requirements-voice.txt
+#
+# NOTE for Windows: PyTorch must be installed from the official wheel, not PyPI.
+# Visit https://pytorch.org/get-started/locally/ and select your config, then run that command first.
+# Example (CPU-only, Python 3.11, Windows):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# THEN run:
+#   pip install -r requirements-voice.txt
+
+openai-whisper==20231117
+transformers==4.42.4
+tiktoken==0.7.0
